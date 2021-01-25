@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment"
+    android:background="@drawable/ic_ipho"
+    >
+
+    <!--
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="109dp"
+        android:layout_height="129dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="human.json"
+        app:lottie_loop="true" />-->
+
+    <ImageView
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="97dp"
+        android:layout_marginRight="140dp"
+        android:background="@drawable/ic_user" />
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="171dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-66dp"
+        android:layout_marginTop="-33dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_form_login"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="218dp"
+        android:layout_marginRight="42dp"
+        android:hint="Username"
+
+        android:textColorHint="#ffffff"
+        app:boxStrokeColor="#ffffff"
+        app:counterEnabled="true"
+        app:counterMaxLength="12"
+
+        app:errorEnabled="true"
+        app:passwordToggleTint="#FAF6F6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_login"
+            android:layout_width="312dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:textColor="#FAF6F6" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_form_login"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_form_login"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="42dp"
+        android:hint="Password"
+        android:textColorHint="#F4F1F1"
+        app:boxStrokeColor="#FBFBFB"
+        app:boxStrokeWidth="3dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#FAF7F7">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_login"
+            android:layout_width="312dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="numberPassword"
+            android:textColor="#F8F7F7" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginRight="3dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="user3.json"
+        app:lottie_loop="true" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="54dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginRight="3dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="lock.json"
+        app:lottie_loop="true" />
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/password_form_login"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/ic_rectangle_2"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/password_form_login"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/ic_rectangle_2"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="SignUp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

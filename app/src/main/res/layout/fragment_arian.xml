@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B2A4C"
+    tools:context=".view.fragment.ArianFragment">
+
+    <ImageView
+        android:id="@+id/kamyab"
+        android:layout_width="337dp"
+        android:layout_height="332dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-14dp"
+        android:transitionName="photoTransition"
+        android:src="@mipmap/ic_arianmain" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="378dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-28dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="-6dp"
+        android:layout_toRightOf="@id/kamyab"
+        android:src="@drawable/ic_path_1" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kamyab"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Arian Karami"
+        android:textColor="#D8D3D3"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/descArian"
+        android:textColor="#638ABE"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/ic_baseline_share_24" />
+
+    <ImageButton
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="124dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/ic_baseline_bookmark_border_24" />
+
+    <ImageButton
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="186dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/ic_baseline_build_24" />
+
+    <ImageButton
+        android:layout_width="39dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="253dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/ic_baseline_chat_24" />
+
+    <Button
+        android:layout_width="158dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/desc"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-28dp"
+        android:layout_marginRight="-46dp"
+        android:background="@drawable/ic_rectangle_1" />
+
+    <Button
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/desc"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="-14dp"
+        android:background="@drawable/ic_rectangle_1" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/desc"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="78dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/ic_rectangle_1" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="-13dp"
+        android:fontFamily="@font/chewy"
+        android:text="BioLink"
+        android:textColor="#0B2A4C"
+        android:textSize="18sp" />
+
+</RelativeLayout>

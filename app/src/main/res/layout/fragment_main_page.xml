@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".view.fragment.MainPageFragment">
+    <LinearLayout
+        android:id="@+id/mainPge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="1044dp"
+            android:background="@drawable/ic_mainpage">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="93dp"
+                android:layout_height="69dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="56dp"
+                android:layout_marginRight="136dp"
+                android:layout_marginBottom="-6dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="loading.json"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="41dp"
+                android:fontFamily="@font/chewy"
+                android:text="BioLink"
+                android:transitionName="titleTransition"
+                android:textColor="#334757"
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arianKarami"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="183dp"
+                android:transitionName="imageTransition"
+                android:src="@mipmap/ic_arian" />
+
+            <!--<TextView
+        android:layout_width="248dp"
+        android:layout_height="91dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="232dp"
+        android:layout_toRightOf="@+id/arianKarami"
+        android:background="@drawable/ic_rectangle_3" />-->
+
+            <RelativeLayout
+                android:id="@+id/arianBox"
+                android:layout_width="248dp"
+                android:layout_height="91dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-18dp"
+                android:layout_marginTop="226dp"
+                android:layout_toRightOf="@+id/arianKarami"
+                android:background="@drawable/ic_rectangle_3">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="sans-serif-black"
+                    android:transitionName="nameTransitio"
+                    android:text="Arain Karami"
+                    android:textColor="#0B2A4C" />
+
+
+                <TextView
+                    android:layout_width="221dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:transitionName="descTransition"
+                    android:text="@string/descArian"
+                    android:textColor="#095693"
+                    android:textSize="9sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="54dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/ic_check" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="monospace"
+                    android:text="subscribe"
+                    android:textColor="@color/chip_text_color"
+                    app:checkedIcon="@drawable/ic_baseline_check_24"
+                    app:chipBackgroundColor="@color/chip_background_color" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/kamyabTanhaei"
+                android:layout_width="120dp"
+                android:layout_height="119dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="237dp"
+                android:layout_marginTop="337dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="centerCrop"
+                android:transitionName="photoTransition"
+                android:src="@mipmap/ic_kamyab" />
+
+            <RelativeLayout
+                android:id="@+id/kamyabBox"
+                android:layout_width="248dp"
+                android:layout_height="91dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-86dp"
+                android:layout_marginTop="378dp"
+                android:layout_toRightOf="@+id/arianKarami"
+                android:background="@drawable/ic_rectangle_3">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="monospace"
+                    android:text="subscribe"
+                    android:textColor="@color/chip_text_color"
+                    app:checkedIcon="@drawable/ic_baseline_check_24"
+                    app:chipBackgroundColor="@color/chip_background_color" />
+
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Kamyab Tanhaei"
+
+                    android:textColor="#0B2A4C" />
+
+
+                <TextView
+                    android:layout_width="221dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="4dp"
+
+                    android:text="@string/descArian"
+                    android:textColor="#095693"
+                    android:textSize="9sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="54dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/ic_check" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/elaheShi"
+                android:layout_width="120dp"
+                android:layout_height="119dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="505dp"
+                android:layout_marginRight="274dp"
+                android:src="@mipmap/ic_elahe" />
+
+            <RelativeLayout
+                android:id="@+id/elaheBox"
+                android:layout_width="248dp"
+                android:layout_height="91dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-22dp"
+                android:layout_marginTop="517dp"
+                android:layout_toRightOf="@+id/arianKarami"
+                android:background="@drawable/ic_rectangle_3">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip3"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="monospace"
+                    android:text="subscribe"
+                    android:textColor="@color/chip_text_color"
+                    app:checkedIcon="@drawable/ic_baseline_check_24"
+                    app:chipBackgroundColor="@color/chip_background_color" />
+
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Elahe Shirashiyani"
+                    android:textColor="#0B2A4C" />
+
+
+                <TextView
+                    android:layout_width="221dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/descArian"
+                    android:textColor="#095693"
+                    android:textSize="9sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="54dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/ic_check" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/arshamKhonasham"
+                android:layout_width="120dp"
+                android:layout_height="119dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="237dp"
+                android:layout_marginTop="678dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_arsham" />
+
+            <RelativeLayout
+                android:id="@+id/arshamBox"
+                android:layout_width="248dp"
+                android:layout_height="91dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-85dp"
+                android:layout_marginTop="666dp"
+                android:layout_toRightOf="@+id/arianKarami"
+                android:background="@drawable/ic_rectangle_3">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip5"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="monospace"
+                    android:text="subscribe"
+                    android:textColor="@color/chip_text_color"
+                    app:checkedIcon="@drawable/ic_baseline_check_24"
+                    app:chipBackgroundColor="@color/chip_background_color" />
+
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Arsham Khonasham"
+                    android:textColor="#0B2A4C" />
+
+
+                <TextView
+                    android:layout_width="221dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/descArian"
+                    android:textColor="#095693"
+                    android:textSize="9sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="54dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/ic_check" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/amiralihariri"
+                android:layout_width="120dp"
+                android:layout_height="119dp"
+                android:layout_below="@id/arshamBox"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="101dp"
+                android:layout_marginRight="286dp"
+                android:src="@mipmap/ic_amirali" />
+
+            <RelativeLayout
+                android:id="@+id/amiraliBox"
+                android:layout_width="248dp"
+                android:layout_height="91dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-45dp"
+                android:layout_marginTop="836dp"
+                android:layout_toRightOf="@+id/arianKarami"
+                android:background="@drawable/ic_rectangle_3">
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip6"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="monospace"
+                    android:text="subscribe"
+                    android:textColor="@color/chip_text_color"
+                    app:checkedIcon="@drawable/ic_baseline_check_24"
+                    app:chipBackgroundColor="@color/chip_background_color" />
+
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Amirali Hariri"
+                    android:textColor="#0B2A4C" />
+
+
+                <TextView
+                    android:layout_width="221dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/descArian"
+                    android:textColor="#095693"
+                    android:textSize="9sp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="43dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="54dp"
+                    android:background="@drawable/ic_check" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/ic_check" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="34dp"
+                android:layout_height="41dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/ic_baseline_dehaze_24" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="137dp"
+                android:layout_height="83dp"
+                android:layout_below="@+id/amiraliBox"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="system.json"
+                app:lottie_loop="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

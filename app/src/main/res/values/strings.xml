@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BioLink</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descArian">Co Founder and CEO Palindroome \nEducation Manager safiran(N.G.O)\nmathematics teacher\ntable tennis player\nUX Designer\n
+CS student"</string>
+    <string name="toast_login">The Username or Password entered are incorrect</string>
+</resources>

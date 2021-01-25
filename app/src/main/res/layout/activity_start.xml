@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_startpage"
+    style="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".view.activity.StartActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="209dp"
+        android:layout_height="156dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-32dp"
+        android:layout_marginBottom="-6dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="seo.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/titleStart"
+        android:layout_width="235dp"
+        android:layout_height="101dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/chewy"
+        android:text="BioLink"
+        android:transitionName="titleTransition"
+
+        android:textColor="#334757"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageHuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="23dp"
+        android:background="@mipmap/ic_launcher_foreground"
+        android:transitionName="imageTransition" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageHuman"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="-3dp"
+        android:fontFamily="casual"
+        android:text="Adam Biesely"
+        android:textColor="#3C95DC"
+        android:transitionName="nameTransitio"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/desscription"
+        android:layout_width="194dp"
+        android:layout_height="247dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="13dp"
+        android:transitionName="descTransition"
+        android:text="A writer with a passionate belief in the power of peer to peer learning and storytelling to change lives. Wants nothing more than to spend a day cooking, reading books, playing board games, and discussing history and politics with friends. Also always up for an adventure!"
+        android:textColor="#84A2BA" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="123dp"
+        android:background="@drawable/ic_rectangle_7"
+        android:text="Enter"
+        android:textColor="#F4F2F2" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/ic_rectangle_7"
+        android:text="login"
+        android:textColor="#F4F2F2" />
+    <!-- <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+ -->
+</RelativeLayout>
